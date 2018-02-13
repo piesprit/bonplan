@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" opacity="0.8" prefHeight="557.0" prefWidth="983.0" style="-fx-background-color: #2A2E37;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="bonplan.FXMLDocumentController">
+   <children>
+      <Label layoutX="66.0" layoutY="135.0" text="Pseudo" textFill="#e8e879">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfPseudo" layoutX="194.0" layoutY="139.0" opacity="0.5" prefHeight="27.0" prefWidth="200.0" />
+      <Label layoutX="72.0" layoutY="200.0" text="Mail" textFill="#e8e879">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfMail" layoutX="194.0" layoutY="200.0" opacity="0.5" prefHeight="27.0" prefWidth="200.0" />
+      <Label layoutX="65.0" layoutY="271.0" text="Mot de passe" textFill="#e8e879">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="tfPwd" layoutX="194.0" layoutY="271.0" opacity="0.5" prefHeight="27.0" prefWidth="200.0" />
+      <Label layoutX="66.0" layoutY="339.0" text="Nom du Plan" textFill="#e8e879">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfNomPlan" layoutX="194.0" layoutY="339.0" opacity="0.5" prefHeight="27.0" prefWidth="200.0" />
+      <Label layoutX="72.0" layoutY="407.0" text="Adresse" textFill="#e8e879">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfAdresse" layoutX="194.0" layoutY="407.0" opacity="0.5" prefHeight="27.0" prefWidth="200.0" />
+      <Label layoutX="532.0" layoutY="139.0" text="Téléphone" textFill="#e8e879">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfTel" layoutX="643.0" layoutY="139.0" opacity="0.5" prefHeight="27.0" prefWidth="200.0" />
+      <Label layoutX="532.0" layoutY="200.0" text="Déscription" textFill="#e8e879">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="tfDesc" alignment="TOP_LEFT" layoutX="643.0" layoutY="185.0" opacity="0.5" prefHeight="188.0" prefWidth="200.0">
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </TextField>
+      <Label layoutX="532.0" layoutY="407.0" text="Catégorie" textFill="#e8e879">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <ChoiceBox fx:id="tfCategorie" layoutX="643.0" layoutY="407.0" opacity="0.5" prefHeight="27.0" prefWidth="200.0" />
+      <Button fx:id="btnSinscrire" layoutX="716.0" layoutY="484.0" mnemonicParsing="false" onAction="#addMethod" prefHeight="50.0" prefWidth="127.0" style="-fx-background-color: #e8e879;" text="S'inscrire" />
+      <Line endX="400.0" layoutX="287.0" layoutY="320.0" rotate="-90.0" stroke="WHITE" />
+      <ImageView fitHeight="105.0" fitWidth="139.0" layoutX="843.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="438.0" AnchorPane.leftAnchor="843.0" AnchorPane.rightAnchor="35.0" AnchorPane.topAnchor="14.0">
+         <image>
+            <Image url="@../Boss-3-icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="228.0" layoutX="399.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="462.0" AnchorPane.leftAnchor="399.0" AnchorPane.rightAnchor="408.43182373046875" AnchorPane.topAnchor="35.0">
+         <image>
+            <Image url="@../Bouton-inscrivez-vous.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="retourbtn" layoutX="32.0" layoutY="23.0" mnemonicParsing="false" onAction="#btnRetour" prefHeight="37.0" prefWidth="82.0" style="-fx-background-color: #1E90FF;" text="Retour" textFill="WHITE" />
+   </children>
+</AnchorPane>

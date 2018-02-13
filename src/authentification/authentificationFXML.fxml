@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" opacity="0.7" prefHeight="558.0" prefWidth="984.0" style="-fx-background-color: #2A2E37;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="authentification.FXMLDocumentController">
+   <children>
+      <Button fx:id="btn" layoutX="271.0" layoutY="358.0" onAction="#btnLoginAction" opacity="0.64" text="Se connecter" textFill="#104a48" />
+      <Label fx:id="label" layoutX="89.0" layoutY="154.0" minHeight="16" minWidth="69" text="Pseudo : " textFill="#e8e879" />
+      <Label layoutX="85.0" layoutY="244.0" text="Mot de Passe :" textFill="#e8e879" />
+      <TextField fx:id="login" layoutX="207.0" layoutY="150.0" opacity="0.5" promptText="Pseudo " />
+      <PasswordField fx:id="mdp" layoutX="207.0" layoutY="240.0" opacity="0.5" promptText="Password" />
+      <Label fx:id="lbl" layoutX="71.0" layoutY="26.0" prefHeight="17.0" prefWidth="181.0" />
+      <ImageView fitHeight="108.0" fitWidth="110.0" layoutX="409.0" layoutY="154.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../user-login-icon-29.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="inscrivezvousbtn" layoutX="662.0" layoutY="137.0" mnemonicParsing="false" onAction="#btninscription" prefHeight="51.0" prefWidth="231.0" style="-fx-background-color: #FFFFE0;" text="Inscrivez-vous">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

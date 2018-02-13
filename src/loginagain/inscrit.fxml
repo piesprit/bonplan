@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" opacity="0.84" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #2A2E37;" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="loginagain.InscritController">
+   <children>
+      <Text fill="#e8e879" layoutX="143.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Pseudo : " />
+      <TextField fx:id="pseudo" layoutX="223.0" layoutY="83.0" opacity="0.5" promptText="Pseudo " />
+      <TextField fx:id="prenom" layoutX="222.0" layoutY="138.0" opacity="0.5" promptText="Prenom" />
+      <TextField fx:id="nom" layoutX="222.0" layoutY="190.0" opacity="0.5" promptText="Nom" />
+      <TextField fx:id="mail" layoutX="221.0" layoutY="249.0" opacity="0.5" promptText="Mail" />
+      <PasswordField fx:id="pass" layoutX="221.0" layoutY="305.0" opacity="0.5" promptText="Mot de Passe " />
+      <Text fill="#e8e879" layoutX="145.0" layoutY="210.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nom : " />
+      <Text fill="#e8e879" layoutX="144.0" layoutY="157.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Prenom : " />
+      <Text fill="#e8e879" layoutX="146.0" layoutY="268.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mail : " />
+      <Text fill="#e8e879" layoutX="108.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mot de Passe : " />
+      <Button fx:id="btn" layoutX="470.0" layoutY="332.0" mnemonicParsing="false" onAction="#AjouterV" opacity="0.73" prefHeight="44.0" prefWidth="91.0" style="-fx-background-color: #E8E879;" text="Inscrire " />
+      <ImageView fitHeight="117.0" fitWidth="122.0" layoutX="439.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../User%20Anonymous%20Yellow.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="187.0" layoutY="11.0" opacity="0.55" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Bouton-inscrivez-vous.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="retourbtn" layoutX="21.0" layoutY="11.0" mnemonicParsing="false" onAction="#btnRetour" prefHeight="37.0" prefWidth="82.0" style="-fx-background-color: #1E90FF;" text="Retour" textFill="WHITE" />
+   </children>
+</AnchorPane>

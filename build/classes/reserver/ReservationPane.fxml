@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" opacity="0.7" prefHeight="477.0" prefWidth="635.0" style="-fx-background-color: #2A2E37;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="reserver.ReservationPaneController">
+   <children>
+      <Text layoutX="179.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Réservez le plan" wrappingWidth="277.13671875">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Text>
+      <Label layoutX="35.0" layoutY="117.0" text="Date de réservation" textFill="#e8e879">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="177.0" text="Heure de réservation" textFill="#e8e879">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="240.0" text="Nombre des places" textFill="#e8e879">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="35.0" layoutY="309.0" text="Téléphone" textFill="#e8e879">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="Nbrplace" layoutX="249.0" layoutY="240.0" opacity="0.5" prefHeight="27.0" prefWidth="200.0" />
+      <TextField fx:id="telephone" layoutX="249.0" layoutY="309.0" opacity="0.5" prefHeight="27.0" prefWidth="200.0" />
+      <DatePicker fx:id="dateReservation" layoutX="249.0" layoutY="118.0" prefHeight="25.0" prefWidth="200.0" />
+      <Button fx:id="btnReserver" layoutX="386.0" layoutY="393.0" mnemonicParsing="false" onAction="#AjouterReservation" prefHeight="50.0" prefWidth="127.0" style="-fx-background-color: #e8e879;" text="Réserver" />
+      <Button fx:id="btnAnnuler" layoutX="186.0" layoutY="393.0" mnemonicParsing="false" onAction="#initialize" prefHeight="50.0" prefWidth="127.0" style="-fx-background-color: #e8e879;" text="Annuler" />
+      <ComboBox fx:id="comboHeure" layoutX="250.0" layoutY="178.0" prefHeight="25.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>
